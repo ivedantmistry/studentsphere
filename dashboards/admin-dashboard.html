@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/dashboards/admin.css">
+    <title>Admin Dashboard</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Admin Dashboard</h1>
+        <button id="logout-button">Logout</button>
+    </header>
+    <main>
+        <section class="dashboard-section">
+            <h2>User Management</h2>
+            <!-- Add user management options here -->
+        </section>
+        <section class="dashboard-section">
+            <h2>Course Management</h2>
+            <!-- Add course management options here -->
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 GSFC University. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const logoutButton = document.getElementById('logout-button');
+
+            logoutButton.addEventListener('click', function () {
+                // Redirect to the login page
+                window.location.href = '/';
+            });
+        });
+    </script>
+</body>
+</html>

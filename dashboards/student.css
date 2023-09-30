@@ -1,0 +1,37 @@
+/* Add specific styling for the student dashboard */
+header {
+    background-color: #00468b;
+    color: #fff;
+    text-align: center;
+    padding: 2rem;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.dashboard-section {
+    width: 30%;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #ccc;
+    background-color: #f9f9f9;
+    margin: 10px;
+    text-align: center;
+}
+
+.dashboard-section h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+footer {
+    background-color: #00468b;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
