@@ -1,36 +1,4 @@
 
-:root {
-    --background: #1a1a2e;
-    --color: #ffffff;
-    --primary-color: #0f3460;
-}
-
-* {
-    box-sizing: border-box;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    margin: 0;
-    position: relative;
-    box-sizing: border-box;
-    font-family: "poppins";
-    background: var(--background);
-    color: var(--color);
-    letter-spacing: 1px;
-    transition: background 0.2s ease;
-    -webkit-transition: background 0.2s ease;
-    -moz-transition: background 0.2s ease;
-    -ms-transition: background 0.2s ease;
-    -o-transition: background 0.2s ease;
-    overflow: hidden;
-}
-/* Add specific styling for the student dashboard */
-.head {
-
 /* Reset some default styles */
 body, h1, h2, ul, form {
     margin: 0;
@@ -44,6 +12,10 @@ body {
 
 header {
     background-color: #35495e;
+    color: #fff;
+    text-align: center;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 #logout-button {
@@ -83,21 +55,21 @@ padding: 1em 1em;
 }
 main {
     display: flex;
-    justify-content: space-evenly;
-    margin-top: 20px;
+    justify-content: space-around;
     align-items: flex-start;
     flex-wrap: wrap;
+
     margin: 20px;
 }
 
 .dashboard-section {
-    width: 20%;
-    border: 1px solid #ccc;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 5px #ccc;
-    margin: 10px;
-    text-align: center; 
+    width: 55%;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 10px 0;
+    margin-left: px;
+    padding: 40px;
 }
 
 .dashboard-section h2 {
@@ -143,14 +115,14 @@ input[type="email"] {
     font-size: 16px;
 }
 
-
-.foot {
+footer {
+    background-color: #35495e;
     color: #fff;
     text-align: center;
     padding: 1rem;
-    position: absolute;
-    top: 190%;
-    left: 35%;
+    margin-top: 20px;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
 
 .cont {
     display: flex;
@@ -290,13 +262,4 @@ table th {
 
 .input-group:hover .label, .input:focus {
     color: #05060fc2; 
-
-}
-.logout{
-  width: 5%;
-  height: 15%;
-  border: 2px solid gray;
-  border-radius: 10%;
-  cursor: pointer;
-  padding: 5px;
 }
