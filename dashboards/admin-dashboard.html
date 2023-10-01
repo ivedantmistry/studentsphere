@@ -61,7 +61,16 @@
     </footer>
 
     <script>
-        // JavaScript code for handling dashboard functionality (same as previous code)
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const logoutButton = document.getElementById('logout-button');
+
+            logoutButton.addEventListener('click', function () {
+                // Redirect to the login page
+                window.location.href = '../index.html';
+            });
+        });
+
     </script>
 </body>
 </html>

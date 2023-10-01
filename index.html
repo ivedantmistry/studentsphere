@@ -4,26 +4,35 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="/style.css">
     <title>Student Portal</title>
+    <link rel="shortcut icon" href="./assets/favcon.png" type="image/x-icon">
+   
 </head>
 <body>
-    <header>
-        <h1>Welcome ABC University Student Portal</h1>
-        <img src="university-logo.png" alt="University Logo">
-    </header>
-    <div class="login-container">
-        <h1>Login</h1>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required>
-        <button id="login-button">Log In</button>
-    </div>
-
+    
+    <section class="container">
+        <div class="login-container">
+            <div class="circle circle-one"></div>
+            <div class="form-container">
+                <img src="/illustration.png" alt="illustration" class="illustration" />
+                <h1 class="opacity" style="color: aliceblue;">LOGIN</h1>
+                <form>  
+                    <input type="email" placeholder="EMAIL" id="email" />
+                    <input type="password" placeholder="PASSWORD" id="password" />
+                    <button class="opacity" id="login-button">Login</button>
+                </form>
+            </div>
+            <div class="circle circle-two"></div>
+        </div>
+        <div class="theme-btn-container"></div>
+    </section>
     <script>
+      
         document.addEventListener('DOMContentLoaded', function () {
             const loginButton = document.getElementById('login-button');
 
-            loginButton.addEventListener('click', function () {
+            loginButton.addEventListener('click', loginCheck);
+
+            function loginCheck() {
                 const email = document.getElementById('email').value;
                 const password = document.getElementById('password').value;
 
@@ -40,8 +49,17 @@
                     console.log('Invalid Credentials');
                     alert('Invalid credentials or unauthorized access.');
                 }
+            }
+
+            // Executing login when the user presses the Enter button
+            document.addEventListener("keydown", (e) => {
+                if (e.key === "Enter") {
+                    loginCheck();
+                }
             });
+
         });
+
     </script>
 </body>
 </html>

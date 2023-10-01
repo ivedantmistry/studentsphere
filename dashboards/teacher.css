@@ -13,8 +13,8 @@ body {
     display: flex;
 }
 header {
-
     background-color: #35495e;
+
     color: #fff;
     text-align: center;
     padding: 2rem;
@@ -31,6 +31,7 @@ header {
     transition: background-color 0.3s;
     font-weight: bold;
 }
+
 
 #logout-button:hover {
     background-color: #c0392b;
@@ -124,6 +125,7 @@ footer {
     background-color: #35495e;
     color: #fff;
     text-align: center;
+
     padding: 1rem;
     margin-top: 20px;
     box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);

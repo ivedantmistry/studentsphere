@@ -12,7 +12,9 @@ body {
     display: flex;
 }
 header {
+
     background-color: #35495e;
+
     color: #fff;
     text-align: center;
     padding: 2rem;
@@ -31,8 +33,22 @@ header {
     font-weight: bold;
 }
 
+
 #logout-button:hover {
-    background-color: #c0392b;
+
+#logout-button{
+    padding: 1em 1em;
+    }
+/* Style the main content */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    padding: 8em;
+
 }
 
 /* Dashboard section styles */
@@ -96,6 +112,7 @@ header {
 }
 
 footer {
+
     background-color: #35495e;
     color: #fff;
     text-align: center;
