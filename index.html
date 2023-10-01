@@ -2,34 +2,31 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="/style.css">
     <title>Student Portal</title>
     <link rel="shortcut icon" href="./assets/favcon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./avtr.jfif" type="image/x-icon">
 </head>
 <body>
-    <header>
-        <h1>Welcome ABC University Student Portal</h1>
-        <img src="./logo.png" alt="University Logo">
-    </header>
-         <div class="logo-img">
-        <img src="university-logo.png" alt="University Logo">
+    
+    <section class="container">
+        <div class="login-container">
+            <div class="circle circle-one"></div>
+            <div class="form-container">
+                <img src="/illustration.png" alt="illustration" class="illustration" />
+                <h1 class="opacity" style="color: aliceblue;">LOGIN</h1>
+                <form>  
+                    <input type="email" placeholder="EMAIL" id="email" />
+                    <input type="password" placeholder="PASSWORD" id="password" />
+                    <button class="opacity">Login</button>
+                </form>
+            </div>
+            <div class="circle circle-two"></div>
         </div>
-         <div class="welcome-text">
-        <h1>Welcome ABC University Student Portal</h1>
-        </div>
-    </header>
-    <div class="login-box">
-    <div class="login-container">
-        <h1>Login</h1>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required>
-        <button id="login-button">Log In</button>
-    </div>
-  </div>
+        <div class="theme-btn-container"></div>
+    </section>
     <script>
-        console.log("ji")
+      
         document.addEventListener('DOMContentLoaded', function () {
             const loginButton = document.getElementById('login-button');
 
@@ -62,9 +59,6 @@
              loginCheck()
             }
         })
-
-
-
 
         });
 
