@@ -18,7 +18,7 @@
                 <form>  
                     <input type="email" placeholder="EMAIL" id="email" />
                     <input type="password" placeholder="PASSWORD" id="password" />
-                    <button class="opacity">Login</button>
+                    <button class="opacity" id="login-button">Login</button>
                 </form>
             </div>
             <div class="circle circle-two"></div>
@@ -30,11 +30,9 @@
         document.addEventListener('DOMContentLoaded', function () {
             const loginButton = document.getElementById('login-button');
 
-            loginButton.addEventListener('click',loginCheck)
-
+            loginButton.addEventListener('click', loginCheck);
 
             function loginCheck() {
-
                 const email = document.getElementById('email').value;
                 const password = document.getElementById('password').value;
 
@@ -51,20 +49,16 @@
                     console.log('Invalid Credentials');
                     alert('Invalid credentials or unauthorized access.');
                 }
-            };
-
-      //executing login when user click enter button
-        document.addEventListener("keydown" ,(e)=>{
-            if(e.key === "Enter"){
-             loginCheck()
             }
-        })
+
+            // Executing login when the user presses the Enter button
+            document.addEventListener("keydown", (e) => {
+                if (e.key === "Enter") {
+                    loginCheck();
+                }
+            });
 
         });
-
-
-
-
 
     </script>
 </body>
