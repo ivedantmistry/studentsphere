@@ -28,8 +28,7 @@ body {
     overflow: hidden;
 }
 /* Add specific styling for the student dashboard */
-header {
-   
+.head {
     color: #fff;
     text-align: center;
     padding: 2rem;
@@ -58,7 +57,7 @@ main {
     margin-bottom: 15px;
 }
 
-footer {
+.foot {
     color: #fff;
     text-align: center;
     padding: 1rem;
