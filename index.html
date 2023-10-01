@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="./style.css">
     <title>Student Portal</title>
 </head>
 <body>
@@ -10,7 +10,14 @@
         <h1>Welcome ABC University Student Portal</h1>
         <img src="./logo.png" alt="University Logo">
     </header>
-    
+         <div class="logo-img">
+        <img src="university-logo.png" alt="University Logo">
+        </div>
+         <div class="welcome-text">
+        <h1>Welcome ABC University Student Portal</h1>
+        </div>
+    </header>
+    <div class="login-box">
     <div class="login-container">
         <h1>Login</h1>
         <label for="email">Email:</label>
@@ -19,12 +26,17 @@
         <input type="password" id="password" name="password" required>
         <button id="login-button">Log In</button>
     </div>
-
+  </div>
     <script>
+        console.log("ji")
         document.addEventListener('DOMContentLoaded', function () {
             const loginButton = document.getElementById('login-button');
 
-            loginButton.addEventListener('click', function () {
+            loginButton.addEventListener('click',loginCheck)
+
+
+            function loginCheck() {
+
                 const email = document.getElementById('email').value;
                 const password = document.getElementById('password').value;
 
@@ -41,8 +53,24 @@
                     console.log('Invalid Credentials');
                     alert('Invalid credentials or unauthorized access.');
                 }
-            });
+            };
+
+      //executing login when user click enter button
+        document.addEventListener("keydown" ,(e)=>{
+            if(e.key === "Enter"){
+             loginCheck()
+            }
+        })
+
+
+
+
         });
+
+
+
+
+
     </script>
 </body>
 </html>
