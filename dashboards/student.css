@@ -1,4 +1,14 @@
-
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+    --primary:#516a9c;
+    --secondary:#F1F9FF;
+    --tertary:#D8EEFF;
+}
 /* Reset some default styles */
 body, h1, h2, ul, form {
     margin: 0;
@@ -8,14 +18,26 @@ body, h1, h2, ul, form {
 body {
     font-family: 'Arial', sans-serif;
     background-color: #f7f7f7;
+    background-color: var(--secondary);
 }
 
+.supremeContainer{
+    display: grid;
+    grid-template-columns: .35fr 1fr;
+    gap: 40px;
+}
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 99vh;
+}
 header {
-    background-color: #35495e;
-    color: #fff;
+    width: 100%;
+    color: var(--primary);
     text-align: center;
     padding: 2rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: var(--secondary);
 }
 
 #logout-button {
@@ -31,6 +53,10 @@ header {
 
 #logout-button:hover {
     background-color: #c0392b; 
+}
+
+.courses{
+    grid-row: 2/-1;
 }
 
 .course-list {
@@ -54,16 +80,12 @@ header {
 padding: 1em 1em;
 }
 main {
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    flex-wrap: wrap;
-
-    margin: 20px;
+    display: grid;
+    grid-template-rows: auto;
 }
 
 .dashboard-section {
-    width: 55%;
+    width: 100%;
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -75,7 +97,7 @@ main {
 .dashboard-section h2 {
     font-size: 24px;
     margin-bottom: 15px;
-    color: #333;
+    color: var(--primary);
 }
 
 #add-course-button,
@@ -116,7 +138,7 @@ input[type="email"] {
 }
 
 footer {
-    background-color: #35495e;
+    background-color: var(--primary);
     color: #fff;
     text-align: center;
     padding: 1rem;
@@ -135,28 +157,35 @@ footer {
 
 
 .content {
-    width: 70%;
     padding: 20px;
-    background-color: #f7f7f7;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin: 20px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: .6fr .6fr 1fr;
+    column-gap: 40px;
 }
 
 .content h2 {
     font-size: 24px;
     margin-bottom: 15px;
-    color: #333;
+    color: var(--primary);
 }
 
 .upcoming-assignments {
-    margin-top: 20px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 10px 0;
+    margin-left: px;
+    padding: 40px;
 }
 
 .upcoming-assignments h3 {
     font-size: 18px;
     margin-bottom: 10px;
-    color: #333;
+    color: var(--primary);
 }
 
 .upcoming-assignments ul {
@@ -178,13 +207,20 @@ footer {
 }
 
 .grades {
-    margin-top: 20px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 10px 0;
+    padding: 40px;
+    grid-column: 2/-1;
+    grid-row: 1/ 3;
 }
 
 .grades h3 {
     font-size: 18px;
     margin-bottom: 10px;
-    color: #333;
+    color: var(--primary);
 }
 
 table {
@@ -208,13 +244,19 @@ table th {
 }
 
 .announcements {
-    margin-top: 20px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 10px 0;
+    padding: 40px;
+    grid-row: 3/-1;
 }
 
 .announcements h3 {
     font-size: 18px;
     margin-bottom: 10px;
-    color: #333;
+    color: var(--primary);
 }
 
 .announcements ul {
@@ -236,7 +278,7 @@ table th {
 }
 
 .input {
-    max-width: 190px;
+    width: 100%;
     height: 44px;
     background-color: #05060f0a;
     border-radius: .5rem;
@@ -262,4 +304,9 @@ table th {
 
 .input-group:hover .label, .input:focus {
     color: #05060fc2; 
+}
+
+.welcome{
+    padding: 30px 40px;
+    background-color: var(--tertary);
 }
