@@ -1,13 +1,24 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
 /* Header Styles */
 header {
-    background: #007BFF;
+
+    background-color: rgb(83, 83, 83);
     color: #fff;
     text-align: center;
     padding: 20px;
+    display: flex;
+    justify-content: space-between;
 }
-
+.welcome-text{
+    display: flex;
+    align-items: center;
+}
 header h1 {
-    font-size: 24px;
+    font-size: 1.2rem;
     margin: 0;
 }
 
@@ -17,12 +28,17 @@ header img {
 }
 
 /* Login Form Styles */
+.login-box{
+ margin-top: 4em;
+ 
+}
 .login-container {
     width: 300px;
     margin: 0 auto;
     background: #fff;
     padding: 20px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+   border: 0.1em solid black;
+border-radius: 1em;
 }
 
 .login-container h1 {
@@ -37,7 +53,7 @@ header img {
 }
 
 .login-container input {
-    width: 100%;
+    width: 90%;
     padding: 10px;
     margin-top: 5px;
     margin-bottom: 10px;
@@ -47,7 +63,7 @@ header img {
 .login-container button {
     width: 100%;
     padding: 10px;
-    background: #007BFF;
+   background-color: rgb(83, 83, 83);
     border: none;
     color: #fff;
     cursor: pointer;
@@ -55,5 +71,5 @@ header img {
 }
 
 .login-container button:hover {
-    background: #0056b3;
+    background: black;
 }
