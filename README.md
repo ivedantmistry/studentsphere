@@ -28,6 +28,7 @@ We are thrilled to be part of Hacktoberfest, a month-long celebration of open so
 ## Contributing
 
 We welcome contributions from the community! Please read our [contribution guidelines](CONTRIBUTING.md) to get started. Whether you're a developer, designer, or documentation enthusiast, there are various ways to contribute.
+*NOTE: always do git pull before raising pr to avoid conflicts*
 
 ## Latest Issues
 
