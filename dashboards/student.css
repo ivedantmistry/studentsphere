@@ -1,6 +1,35 @@
+:root {
+    --background: #1a1a2e;
+    --color: #ffffff;
+    --primary-color: #0f3460;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    position: relative;
+    box-sizing: border-box;
+    font-family: "poppins";
+    background: var(--background);
+    color: var(--color);
+    letter-spacing: 1px;
+    transition: background 0.2s ease;
+    -webkit-transition: background 0.2s ease;
+    -moz-transition: background 0.2s ease;
+    -ms-transition: background 0.2s ease;
+    -o-transition: background 0.2s ease;
+    overflow: hidden;
+}
 /* Add specific styling for the student dashboard */
 header {
-    background-color: #00468b;
+   
     color: #fff;
     text-align: center;
     padding: 2rem;
@@ -8,18 +37,18 @@ header {
 
 main {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    margin-top: 20px;
     align-items: flex-start;
     flex-wrap: wrap;
 }
 
 .dashboard-section {
-    width: 30%;
+    width: 20%;
     border: 1px solid #ccc;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 5px #ccc;
-    background-color: #f9f9f9;
     margin: 10px;
     text-align: center;
 }
@@ -30,8 +59,18 @@ main {
 }
 
 footer {
-    background-color: #00468b;
     color: #fff;
     text-align: center;
     padding: 1rem;
+    position: absolute;
+    top: 190%;
+    left: 35%;
+}
+.logout{
+  width: 5%;
+  height: 15%;
+  border: 2px solid gray;
+  border-radius: 10%;
+  cursor: pointer;
+  padding: 5px;
 }

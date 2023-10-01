@@ -6,18 +6,24 @@
     <title>Student Portal</title>
 </head>
 <body>
-    <header>
-        <h1>Welcome ABC University Student Portal</h1>
-        <img src="university-logo.png" alt="University Logo">
-    </header>
-    <div class="login-container">
-        <h1>Login</h1>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required>
-        <button id="login-button">Log In</button>
-    </div>
+    <h1 class="hedingg">WELCOME TO STUDENT PORTAL</h1>
+    <section class="container">
+        
+        <div class="login-container">
+            <div class="circle circle-one"></div>
+            <div class="form-container">
+                <img src="https://raw.githubusercontent.com/hicodersofficial/glassmorphism-login-form/master/assets/illustration.png" alt="illustration" class="illustration" />
+                <h1 class="opacity">LOGIN</h1>
+                <form>
+                    <input type="email" placeholder="EMAIL" id="email" />
+                    <input type="password" placeholder="PASSWORD" id="password" />
+                    <button class="opacity">Login</button>
+                </form>
+            </div>
+            <div class="circle circle-two"></div>
+        </div>
+        <div class="theme-btn-container"></div>
+    </section>
 
     <script>
         document.addEventListener('DOMContentLoaded', function () {
@@ -27,7 +33,7 @@
                 const email = document.getElementById('email').value;
                 const password = document.getElementById('password').value;
 
-                if (email === 'student' && password === '123') {
+                if (email === 'student@gmail.com' && password === '123') {
                     console.log('Student Authenticated');
                     window.location.href = 'dashboards/student-dashboard.html';
                 } else if (email === 'teacher' && password === '123') {
