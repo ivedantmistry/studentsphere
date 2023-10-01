@@ -12,7 +12,7 @@ body {
 
 /* Style the header */
 header {
-    background-color: #007BFF;
+    background-color:rgb(83, 83, 83);
     color: #fff;
     text-align: center;
     padding: 20px;
@@ -21,7 +21,9 @@ header {
 header h1 {
     font-size: 24px;
 }
-
+#logout-button{
+    padding: 1em 1em;
+    }
 /* Style the main content */
 main {
     max-width: 800px;
@@ -30,6 +32,7 @@ main {
     background-color: #fff;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     margin-top: 20px;
+    padding: 8em;
 }
 
 /* Style dashboard sections */
@@ -49,7 +52,8 @@ main {
 footer {
     text-align: center;
     padding: 10px;
-    background-color: #007BFF;
+    background-color: rgb(83, 83, 83);
     color: #fff;
     font-size: 14px;
+    padding-bottom: 2em;
 }
