@@ -1,3 +1,4 @@
+
 :root {
     --background: #1a1a2e;
     --color: #ffffff;
@@ -12,7 +13,28 @@ html {
     scroll-behavior: smooth;
 }
 
-body {
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+/* Header Styles */
+header {
+
+    background-color: rgb(83, 83, 83);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.welcome-text{
+    display: flex;
+    align-items: center;
+}
+header h1 {
+    font-size: 1.2rem;
     margin: 0;
     box-sizing: border-box;
     font-family: "poppins";
@@ -27,6 +49,7 @@ body {
     overflow: hidden;
 }
 
+
 a {
     text-decoration: none;
     color: var(--color);
@@ -34,6 +57,24 @@ a {
 
 h1 {
     font-size: 2.5rem;
+
+header img {
+    max-width: 125px;
+    margin-top: 10px;
+}
+
+/* Login Form Styles */
+.login-box{
+ margin-top: 4em;
+ 
+}
+.login-container {
+    width: 300px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+   border: 0.1em solid black;
+border-radius: 1em;
 }
 
 .container {
@@ -62,6 +103,7 @@ h1 {
     -o-border-radius: 10px;
 }
 
+
 .login-container form input {
     display: block;
     padding: 14.5px;
@@ -86,7 +128,8 @@ h1 {
     box-shadow: 0 0 16px 1px rgba(0, 0, 0, 0.2);
     animation: wobble 0.3s ease-in;
     -webkit-animation: wobble 0.3s ease-in;
-}
+=======
+
 
 .login-container form button {
     background-color: var(--primary-color);
@@ -99,9 +142,11 @@ h1 {
     letter-spacing: 1.5px;
     font-weight: bold;
     width: 100%;
+
     cursor: pointer;
     margin-bottom: 2rem;
     transition: all 0.1s ease-in-out;
+
     border: none;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -216,7 +261,7 @@ h1 {
         -ms-transform: scale(1);
         -o-transform: scale(1);
     }
-}
+
 
 .hedingg{
   text-align: center;

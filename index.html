@@ -2,13 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="./style.css">
     <title>Student Portal</title>
+    <link rel="shortcut icon" href="./avtr.jfif" type="image/x-icon">
 </head>
 <body>
-    <h1 class="hedingg">WELCOME TO STUDENT PORTAL</h1>
+
+    <h1 class="hedingg>WELCOME TO STUDENT PORTAL</h1>
     <section class="container">
-        
         <div class="login-container">
             <div class="circle circle-one"></div>
             <div class="form-container">
@@ -25,29 +26,5 @@
         <div class="theme-btn-container"></div>
     </section>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const loginButton = document.getElementById('login-button');
-
-            loginButton.addEventListener('click', function () {
-                const email = document.getElementById('email').value;
-                const password = document.getElementById('password').value;
-
-                if (email === 'student@gmail.com' && password === '123') {
-                    console.log('Student Authenticated');
-                    window.location.href = 'dashboards/student-dashboard.html';
-                } else if (email === 'teacher' && password === '123') {
-                    console.log('Teacher Authenticated');
-                    window.location.href = 'dashboards/teacher-dashboard.html';
-                } else if (email === 'admin' && password === '123') {
-                    console.log('Admin Authenticated');
-                    window.location.href = 'dashboards/admin-dashboard.html';
-                } else {
-                    console.log('Invalid Credentials');
-                    alert('Invalid credentials or unauthorized access.');
-                }
-            });
-        });
-    </script>
 </body>
 </html>

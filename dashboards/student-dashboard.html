@@ -2,27 +2,106 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="/dashboards/student.css">
+    <link rel="stylesheet" href="./student.css">
     <title>Student Dashboard</title>
 </head>
 <body>
     <header class="head">
-        <h1>Welcome to the Student Dashboard</h1>
-        <button id="logout-button" class="logout">Logout</button>
+        <div class="cont">
+            <h1>Welcome to the Student Dashboard</h1>
+            <button id="logout-button">Logout</button>
+        </div>
+
     </header>
     <main>
-        <section class="dashboard-section">
-            <h2>Your Courses</h2>
-            <!-- Add course management options here -->
+        <aside class="sidebar">
+            <section class="dashboard-section courses">
+                <h2>Your Courses</h2>
+                <ul class="course-list">
+                    <li>Course 1: Mathematics</li>
+                    <li>Course 2: Chemisty</li>
+                    <li>Course 3: English Literature</li>
+                    <li>Course 4: Physics</li>
+                </ul>
+                <button id="add-course-button">Add Course</button>
+                <button id="remove-course-button">Remove Course</button>
+            </section>
+            <section class="dashboard-section profile">
+                <h2>Your Profile</h2>
+                <form id="profile-form">
+                    <div class="input-group">
+                    <label class="label" for="username">Username:</label>
+                    <input class="input" type="text" id="username" name="username" placeholder="Enter Your Name">
+                    </div>
+                    <br>
+                    <label class="label"for="email">Email:</label>
+                    <input class="input"type="email" id="email" name="email" placeholder="Enter your email">
+                    <br>
+                    <button type="submit">Save Changes</button>
+                </form>
+            </section>
+        </aside>
+        <div class="content">
+        <h2>Welcome, Student!</h2>
+        
+        <section class="upcoming-assignments">
+            <h3>Upcoming Assignments</h3>
+            <ul>
+                <li>Assignment 1: Due on October 15th</li>
+                <li>Assignment 2: Due on October 22nd</li>
+                <li>Assignment 3: Due on November 5th</li>
+            </ul>
         </section>
-        <section class="dashboard-section">
-            <h2>Your Profile</h2>
-            <!-- Add student profile options here -->
+
+        <section class="grades">
+            <h3>Your Grades</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Course</th>
+                        <th>Assignment</th>
+                        <th>Grade</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Mathematics</td>
+                        <td>Assignment 1</td>
+                        <td>95%</td>
+                    </tr>
+                    <tr>
+                        <td>Chemistry</td>
+                        <td>Assignment 3</td>
+                        <td>88%</td>
+                    </tr>
+                    <tr>
+                        <td>English Literature</td>
+                        <td>Assignment 2</td>
+                        <td>91%</td>
+                    </tr>
+                    <tr>
+                        <td>Physics</td>
+                        <td>Assignment 1</td>
+                        <td>94%</td>
+                    </tr>
+                    <!-- Add more rows for other courses and assignments -->
+                </tbody>
+            </table>
         </section>
+
+        <section class="announcements">
+            <h3>Announcements</h3>
+            <ul>
+                <li>There will be a guest lecture on October 20th in the History of Science class.</li>
+                <li>Mathematics midterm exam is scheduled for November 10th.</li>
+            </ul>
+        </section>
+    </div>
     </main>
     <footer class="foot">
         <p>&copy; 2023 ABC University. All rights reserved.</p>
     </footer>
+
 
     <script>
         document.addEventListener('DOMContentLoaded', function () {
@@ -30,9 +109,8 @@
 
             logoutButton.addEventListener('click', function () {
                 // Redirect to the login page
-                window.location.href = 'index.html';
+                window.location.href = '../index.html';
             });
         });
-    </script>
 </body>
 </html>
