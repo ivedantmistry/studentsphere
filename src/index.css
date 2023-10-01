@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Nunito:wght@700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+  font-family: 'Lato', sans-serif;
+}
+
+#logo{
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+}
+
+ul li a{
+  color: #FFF;
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 0.085px;
+}
+
+ul li a:hover{
+  background: none !important;
+    color: #FFF !important;
+    border: 2px solid white;
+
+}
+ul li a:focus{
+  background: none !important;
+  color: #FFF !important;
+  border: 2px solid white;
+}
