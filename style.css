@@ -50,7 +50,7 @@ a {
 }
 
 h1 {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
 }
 header img {
     max-width: 125px;
@@ -102,7 +102,7 @@ header img {
 .login-container form input {
     display: block;
     padding: 14.5px;
-    width: 100%;
+    width: 90%;
     margin: 2rem 0;
     color: var(--color);
     outline: none;
@@ -130,13 +130,14 @@ header img {
     background-color: var(--primary-color);
     color: var(--color);
     display: block;
-    padding: 13px;
+    padding: 12px;
+    padding-left: 10px;
     border-radius: 5px;
     outline: none;
     font-size: 18px;
     letter-spacing: 1.5px;
     font-weight: bold;
-    width: 100%;
+    width: 18.98rem;
 
     cursor: pointer;
     margin-bottom: 2rem;
