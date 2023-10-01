@@ -1,3 +1,4 @@
+
 /* Reset some default styles */
 body, h1, h2, ul, form {
     margin: 0;
@@ -49,12 +50,15 @@ header {
 .course-list li:hover {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
-
+#logout-button{
+padding: 1em 1em;
+}
 main {
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
     flex-wrap: wrap;
+
     margin: 20px;
 }
 

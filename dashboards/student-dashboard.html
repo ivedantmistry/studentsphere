@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="/dashboards/student.css">
+    <link rel="stylesheet" href="./student.css">
     <title>Student Dashboard</title>
 </head>
 <body>
@@ -101,6 +101,15 @@
         <p>&copy; 2023 ABC University. All rights reserved.</p>
     </footer>
 
-    <script src="script.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const logoutButton = document.getElementById('logout-button');
+
+            logoutButton.addEventListener('click', function () {
+                // Redirect to the login page
+                window.location.href = '../index.html';
+            });
+        });
 </body>
 </html>
