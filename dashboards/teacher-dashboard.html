@@ -2,37 +2,124 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="/dashboards/teacher.css    ">
+    <link rel="stylesheet" href="/dashboards/teacher.css">
     <title>Teacher Dashboard</title>
 </head>
 <body>
     <header>
+        <div class="cont">
         <h1>Welcome to the Teacher Dashboard</h1>
         <button id="logout-button">Logout</button>
+        </div>
     </header>
     <main>
-        <section class="dashboard-section">
-            <h2>Your Courses</h2>
-            <!-- Add course management options here -->
+        <aside class="sidebar">
+            <section class="dashboard-section courses">
+                <h2>Student Results</h2>
+                <ul class="student-results-list">
+                    <!-- Student results will be displayed here -->
+                </ul>
+                <button id="add-result-button">Add Result</button>
+                <form id="add-result-form" style="display: none;">
+                    <label for="student-name">Student Name:</label>
+                    <input type="text" id="student-name" required><br>
+
+                    <label for="result-type">Result Type:</label>
+                    <input type="text" id="result-type" required><br>
+
+                    <label for="result-file">Result Document:</label>
+                    <input type="file" id="result-file" required><br>
+
+                    <button type="submit">Submit</button>
+                </form>
+            </section>
+            <!-- ... (previous code) ... -->
+        <section class="dashboard-section attendance">
+            <h2>Student Attendance</h2>
+            <ul class="student-attendance-list">
+                <!-- Student attendance will be displayed here -->
+            </ul>
+            <button id="add-student-button">Add Student</button>
         </section>
-        <section class="dashboard-section">
-            <h2>Your Students</h2>
-            <!-- Add student management options here -->
-        </section>
+
+<!-- ... (remaining code) ... -->
+
+        </aside>
+        <div class="content">
+            <h2>Welcome, Teacher!</h2>
+                <h3>Your Classes</h3>
+                <table class="timetable-table">
+                    <thead>
+                        <tr>
+                            <th>Day</th>
+                            <th>9:00-10:30</th>
+                            <th>10:30-11:15</th>
+                            <th>11:15-12:00</th>
+                            <th>12:00-1:30</th>
+                            <th>1:30-2:15</th>
+                            <th>2:15-3:00</th>
+                            <th>3:00-4:30</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Monday</td>
+                            <td>Class A</td>
+                            <td>Class B</td>
+                            <td>Class C</td>
+                            <td>Class D</td>
+                            <td>Class E</td>
+                            <td>Class F</td>
+                            <td>Class G</td>
+                        </tr>
+                        <tr>
+                            <td>Tuesday</td>
+                            <td>Class H</td>
+                            <td>Class I</td>
+                            <td>Class J</td>
+                            <td>Class K</td>
+                            <td>Class L</td>
+                            <td>Class M</td>
+                            <td>Class N</td>
+                        </tr>
+                        <tr>
+                            <td>Wednesday</td>
+                            <td>Class O</td>
+                            <td>Class P</td>
+                            <td>Class Q</td>
+                            <td>Class R</td>
+                            <td>Class S</td>
+                            <td>Class T</td>
+                            <td>Class U</td>
+                        </tr>
+                        <tr>
+                            <td>Thursday</td>
+                            <td>Class V</td>
+                            <td>Class W</td>
+                            <td>Class X</td>
+                            <td>Class Y</td>
+                            <td>Class Z</td>
+                            <td>Class AA</td>
+                            <td>Class AB</td>
+                        </tr>
+                        <tr>
+                            <td>Friday</td>
+                            <td>Class AC</td>
+                            <td>Class AD</td>
+                            <td>Class AE</td>
+                            <td>Class AF</td>
+                            <td>Class AG</td>
+                            <td>Class AH</td>
+                            <td>Class AI</td>
+                        </tr>
+                    </tbody>
+                </table>
+        </div>
     </main>
     <footer>
-        <p>&copy; 2023 GSFC University. All rights reserved.</p>
+        <p>&copy; 2023 ABC University. All rights reserved.</p>
     </footer>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const logoutButton = document.getElementById('logout-button');
-
-            logoutButton.addEventListener('click', function () {
-                // Redirect to the login page
-                window.location.href = '/';
-            });
-        });
-    </script>
+    <script src="teacher.js"></script>
 </body>
 </html>
