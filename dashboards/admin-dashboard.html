@@ -7,13 +7,14 @@
 </head>
 <body>
     <header>
-        <div class="cont">
-        <h1>Welcome to the Admin Dashboard</h1>
-        <button id="logout-button">Logout</button>
+        <div class="header-content">
+            <h1>Welcome to the Admin Dashboard</h1>
+            <button id="logout-button">Logout</button>
         </div>
     </header>
-    <main>
-        <section class="dashboard-section">
+    <div class="flex">
+    <aside class="sidebar">
+        <section class="user">
             <h2>User Management</h2>
             <div class="user-options">
                 <ul>
@@ -23,7 +24,7 @@
                 </ul>
             </div>
         </section>
-        <section class="dashboard-section">
+        <section class="course">
             <h2>Course Management</h2>
             <div class="course-options">
                 <ul>
@@ -33,35 +34,38 @@
                 </ul>
             </div>
         </section>
-        <section class="dashboard-section" id="fees-section">
+    </aside>
+
+    <main>
+        <section class="dashboard-section fees" id="fees-section">
             <h2>Student Fees</h2>
             <p>Total number of students who have paid their fees: <span id="fees-count">0</span></p>
         </section>
-        <section class="dashboard-section" id="timetable-section">
+        <section class="dashboard-section timetables" id="timetable-section">
             <h2>Timetables</h2>
             <!-- Placeholder for multiple timetable tables -->
         </section>
-        <section class="dashboard-section" id="new-entries-section">
+        <section class="dashboard-section entries" id="new-entries-section">
             <h2>New Student Entries</h2>
             <!-- Placeholder for new student entries content -->
         </section>
-        <section class="dashboard-section" id="user-management-section">
+        <section class="dashboard-section content" id="user-management-section">
             <h2>User Management Content</h2>
             <!-- Add user management content here -->
             <p>This section allows you to manage users, check student fees, and view new student entries.</p>
         </section>
-        <section class="dashboard-section" id="course-management-section">
+        <section class="dashboard-section course-management" id="course-management-section">
             <h2>Course Management Content</h2>
             <!-- Add course management content here -->
             <p>This section allows you to manage courses, add new courses, edit existing courses, and view the course list.</p>
         </section>
     </main>
+    </div>
     <footer>
         <p>&copy; 2023 GSFC University. All rights reserved.</p>
     </footer>
 
     <script>
-
         document.addEventListener('DOMContentLoaded', function () {
             const logoutButton = document.getElementById('logout-button');
 
@@ -70,7 +74,6 @@
                 window.location.href = '../index.html';
             });
         });
-
     </script>
 </body>
 </html>
