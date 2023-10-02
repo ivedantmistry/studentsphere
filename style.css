@@ -218,3 +218,24 @@ header img {
 .theme-btn:hover {
     width: 40px !important;
 }
+
+
+/* Login Container Responsive */
+@media only screen and (max-width: 700px) {
+    .login-container {
+        width: 100%; 
+        max-width: 300px; 
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .login-container form button {
+        width: 100%;
+        margin-left:10px ; 
+    }
+
+    .illustration {
+        display: none; 
+    }
+
+}
