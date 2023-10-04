@@ -14,128 +14,140 @@
                 <h2>WELCOME</h2>
                 <br>
                 <h3>Hi, Sneha</h3>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./student.css" />
+    <title>Student Dashboard</title>
+
+    <!-- google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="supremeContainer">
+      <aside class="sidebar">
+        <section class="upcoming-assignments">
+            <h3>Upcoming Assignments</h3>
+            <ul>
+              <li>Assignment 1: Due on October 15th</li>
+              <li>Assignment 2: Due on October 22nd</li>
+              <li>Assignment 3: Due on November 5th</li>
+            </ul>
+          </section>
+        <section class="dashboard-section profile">
+          <h2>Your Profile</h2>
+          <form id="profile-form">
+            <div class="input-group">
+              <label class="label" for="username">Username:</label>
+              <input
+                class="input"
+                type="text"
+                id="username"
+                name="username"
+                placeholder="Enter Your Name"
+              />
             </div>
-            <div class="sidebar">
-                <a href="#" class="active">
-                    <span class="material-icons-sharp">grid_view</span>
-                    <h3>Dashboard</h3>
-                </a>
-                <a href="#">
-                    <span class="material-icons-sharp">settings</span>
-                    <h3>Profile</h3>
-                </a>
-                <a href="#">
-                    <span class="material-icons-sharp">person</span>
-                    <h3>Course</h3>
-                </a>
-                <a href="#">
-                    <span class="material-icons-sharp">receipt_long</span>
-                    <h3>Semester</h3>
-                </a>
-                <a href="#">
-                    <span class="material-icons-sharp">insights</span>
-                    <h3>GPA Calculation</h3>
-                </a>
-                <a href="#">
-                    <span class="material-icons-sharp">inventory</span>
-                    <h3>Timetable</h3>
-                </a>
-                <a href="#">
-                    <span class="material-icons-sharp">logout</span>
-                    <h3>Logout</h3>
-                </a>
+            <br />
+            <label class="label" for="email">Email:</label>
+            <input
+              class="input"
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter your email"
+            />
+            <br />
+            <button type="submit">Save Changes</button>
+          </form>
+        </section>
+      </aside>
+      <main>
+        <header>
+          <div class="cont">
+            <h1>Student Dashboard</h1>
+            <button id="logout-button">Logout</button>
+          </div>
+        </header>
+        <div class="content">
+            <div class="dashboard-section welcome">
+                <h2>Welcome Student!</h2>
+                <p>You Have learned a lot . Keep it up and you can apply for Scholarships and interships form.</p>
             </div>
-        </aside>
-        <main>
-            <h1>DASHBOARD</h1>
-            <div class="profile">
-                <img src="photo.jpg" class="profile-image">
-                <br><br>
-            </div>
-            <div class="details">
-                <h2>STUDENT PROFILE</h2>
+            <section class="grades">
+                <h3>Your Grades</h3>
                 <table>
                     <thead>
+                        <tr>
+                            <th>Course</th>
+                            <th>Assignment</th>
+                            <th>Grade</th>
+                        </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <th>University Enrolment No. :</th>
-                            <td>00501482031</td>
+                            <td>Mathematics</td>
+                            <td>Assignment 1</td>
+                            <td>95%</td>
                         </tr>
                         <tr>
-                            <th>Student Name :</th>
-                            <td>Sneha</td>
+                            <td>Chemistry</td>
+                            <td>Assignment 3</td>
+                            <td>88%</td>
                         </tr>
                         <tr>
-                            <th>Gender :</th>
-                            <td>Female</td>
+                            <td>English Literature</td>
+                            <td>Assignment 2</td>
+                            <td>91%</td>
                         </tr>
                         <tr>
-                            <th>Religion :</th>
-                            <td>Hindu</td>
+                            <td>Physics</td>
+                            <td>Assignment 1</td>
+                            <td>94%</td>
                         </tr>
-                        <tr>
-                            <th>Category :</th>
-                            <td>General</td>
-                        </tr>
-                        <tr>
-                            <th>Date Of Birth :</th>
-                            <td>10/03/2001</td>
-                        </tr>
-                        <tr>
-                            <th>Region :</th>
-                            <td>Delhi</td>
-                        </tr>
+                        <!-- Add more rows for other courses and assignments -->
                     </tbody>
                 </table>
-                <br><br><br>
-                <table>
-                    <thead>
-                        <h2>Contact Details</h2>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th>Mobile No.1 :</th>
-                            <td>4844656488</td>
-                        </tr>
-                        <tr>
-                            <th>Mobile No.2: :</th>
-                            <td>5824866321</td>
-                        </tr>
-                        <tr>
-                            <th>E-mail Id :</th>
-                            <td>sfhbsf@gmail.com</td>
-                        </tr>
-                        <tr>
-                            <th>Alternate E-mail Id :</th>
-                            <td>efwe@gmail.com</td>
-                        </tr>
-                        <tr>
-                            <th>Address :</th>
-                            <td>H.no-289, sector 24, New Delhi</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </main>
-        <right>
-        <div class="announcements">
-            <h3>ANNOUNCEMENTS</h3>
-            <h4>1) There will be a guest lecture on October 20th in the History of
-            Science class.</h4>
-            <br>
-            <h4>2) Mathematics midterm exam is scheduled for November 10th.</h4>
+            </section>
+            <section class="dashboard-section courses">
+            <h2>Your Courses</h2>
+            <ul class="course-list">
+              <li>Course 1: Mathematics</li>
+              <li>Course 2: Chemisty</li>
+              <li>Course 3: English Literature</li>
+              <li>Course 4: Physics</li>
+            </ul>
+            <button id="add-course-button">Add Course</button>
+            <button id="remove-course-button">Remove Course</button>
+          </section>
+
+          <section class="announcements">
+            <h3>Announcements</h3>
+            <ul>
+              <li>
+                There will be a guest lecture on October 20th in the History of
+                Science class.
+              </li>
+              <li>Mathematics midterm exam is scheduled for November 10th.</li>
+            </ul>
+          </section>
         </div>
-        <div class="upcoming-assignments">
-            <h3>ASSIGNMENTS</h3>
-            <h4>Assignment 1: Due on October 15th</h4>
-            <h4>Assignment 2: Due on October 22nd</h4>
-            <h4>Assignment 3: Due on November 5th</h4>
-        </div>
-        <div class="notify">
-            <h3>NOTICES</h3>
-            <h4>Fill the survey form</h4>
-        </div>
-        </right>
-</body>
+      </main>
+    </div>
+    <footer>
+      <p>&copy; 2023 ABC University. All rights reserved.</p>
+    </footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const logoutButton = document.getElementById("logout-button");
+
+        logoutButton.addEventListener("click", function () {
+          // Redirect to the login page
+          window.location.href = "../index.html";
+        });
+      });
+    </script>
+  </body>
 </html>
