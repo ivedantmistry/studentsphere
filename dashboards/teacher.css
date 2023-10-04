@@ -1,40 +1,44 @@
 /* Reset some default styles */
-body, h1, h2, ul, form {
-    margin: 0;
-    padding: 0;
+body,
+h1,
+h2,
+ul,
+form {
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f0f0f0;
+  font-family: "Arial", sans-serif;
+  background-color: #f0f0f0;
 }
 
-.cont{
-    display: flex;
+.cont {
+  display: flex;
 }
 header {
-    background-color: #35495e;
-
-    color: #fff;
-    text-align: center;
-    padding: 2rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #35495e;
+  color: #fff;
+  text-align: center;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  height: 70px;
 }
 
 #logout-button {
-    background-color: #e74c3c;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    font-weight: bold;
+  background-color: #e74c3c;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-weight: bold;
+  height: 40px;
 }
 
-
 #logout-button:hover {
-    background-color: #c0392b;
+  background-color: #c0392b;
 }
 
 /* Your existing CSS */
@@ -42,149 +46,158 @@ header {
 
 /* Style the list elements in the "Your Courses" section */
 .course-list {
-    list-style-type: none;
-    padding: 0;
+  list-style-type: none;
+  padding: 0;
 }
 
 .course-list li {
-    background-color: #fff;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .course-list li:hover {
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 /* Add styles for other sections (e.g., "Student Attendance") as needed */
 
 main {
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    margin: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin: 20px;
 }
 
 .dashboard-section {
-    width: 90%; /* Adjust the width as needed */
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin: 10px 0;
-    margin-left: 10px;
-    padding: 20px;
+  width: 90%; /* Adjust the width as needed */
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 10px 0;
+  margin-left: 10px;
+  padding: 20px;
 }
 
 .dashboard-section h2 {
-    font-size: 24px;
-    margin-bottom: 15px;
-    color: #333;
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #333;
 }
 #add-student-button,
 #add-result-button,
 [type="submit"] {
-    background-color: #009688;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    font-weight: bold;
-    margin-top: 10px;
+  background-color: #009688;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-weight: bold;
+  margin-top: 8px;
+  margin-bottom: 10px;
 }
+
+#student-name,
+#result-type {
+  width: 95%;
+}
+
 #add-student-button:hover,
 #add-result-button:hover,
 [type="submit"]:hover {
-    background-color: #00bfa5;
+  background-color: #00bfa5;
 }
 
+.student-attendance-list {
+  margin: 8px;
+}
 /* Style the profile form */
 label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-    color: #333;
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
 }
 
 input[type="text"],
 input[type="email"] {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
 }
 
 footer {
-    background-color: #35495e;
-    color: #fff;
-    text-align: center;
+  background-color: #35495e;
+  color: #fff;
+  text-align: center;
 
-    padding: 1rem;
-    margin-top: 20px;
-    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  margin-top: 20px;
+  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .cont {
-    display: flex;
+  display: flex;
 }
 
 #logout-button {
-    margin-left: 57%;
+  margin-left: 57%;
 }
 
 .content {
-    width: 70%;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin: 20px 0;
+  width: 70%;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
 }
 
 .content h2 {
-    font-size: 24px;
-    margin-bottom: 15px;
-    color: #333;
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #333;
 }
 
-
 .timetable {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 .timetable-table {
-    width: 100%;
-    border-collapse: collapse;
-    background-color: #ffffff;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-top: 20px;
-    font-size: 15px; /* Reduce font size */
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  font-size: 15px; /* Reduce font size */
 }
 
 .timetable-table th,
 .timetable-table td {
-    padding: 30px 40px;
-    text-align: center;
-    border: 1px solid #ccc;
+  padding: 30px 40px;
+  text-align: center;
+  border: 1px solid #ccc;
 }
 
 .timetable-table th {
-    background-color: #00468b;
-    color: #fff;
+  background-color: #00468b;
+  color: #fff;
 }
 
 .timetable-table tbody tr:nth-child(even) {
-    background-color: #f9f9f9;
+  background-color: #f9f9f9;
 }
 
 .timetable-table tbody tr:hover {
-    background-color: #f0f0f0;
+  background-color: #f0f0f0;
 }
